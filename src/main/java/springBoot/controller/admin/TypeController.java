@@ -7,8 +7,10 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import springBoot.po.Type;
 import springBoot.service.TypeService;
 
 @Controller
@@ -34,6 +36,16 @@ public class TypeController {
 		return "admin/types-input";
 	}
 	
-	
+	//新增提交
+	@PostMapping("/types")
+	public String post(Type type) {
+		Type t = typeService.saveType(type);
+		if(t == null) {
+			//
+		}else {
+			// 
+		}
+		return "redirect:/admin/types";
+	}
 	
 }
