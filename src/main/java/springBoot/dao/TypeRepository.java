@@ -6,4 +6,5 @@ import springBoot.po.Type;
 
 public interface TypeRepository extends JpaRepository<Type, Long> {
 	
+	Type findByName(String name);
 }

@@ -44,6 +44,11 @@ public class TypeController {
 	//3、新增提交
 	@PostMapping("/types")
 	public String post(@Valid Type type,BindingResult result, RedirectAttributes attributes) { //BindingResult接收校验的结果,@Valid必须和BindingResult连在一起
+		Type t1 = typeService.getTypeByName(type.getName());
+		if(t1 != null) {
+			result.rejectValue("name", "nameError", "不能添加重复分类");
+		}
+		
 		if(result.hasErrors()) {
 			return "admin/types-input";
 		}

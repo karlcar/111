@@ -14,6 +14,7 @@ import springBoot.po.Type;
 @Service
 public class TypeServiceImpl implements TypeService {
 	
+
 	@Autowired
 	private TypeRepository typeRepository;
 	
@@ -27,6 +28,11 @@ public class TypeServiceImpl implements TypeService {
 	@Override
 	public Type getType(Long id) {
 		return typeRepository.findById(id).orElse(null);
+	}
+	
+	@Override
+	public Type getTypeByName(String name) {
+		return typeRepository.findByName(name);
 	}
 	
 	@Transactional
