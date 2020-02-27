@@ -18,6 +18,7 @@ public class TypeController {
 	@Autowired
 	private TypeService typeService;
 	
+	//分页
 	@GetMapping("/types")
 	public String list(@PageableDefault(size = 3,sort= {"id"}, direction = Direction.DESC) 
 						Pageable pageable, 
@@ -27,7 +28,11 @@ public class TypeController {
 		return "admin/types";
 	}
 	
-	
+	//去到新增页面
+	@GetMapping("/types/input")
+	public String input() {
+		return "admin/types-input";
+	}
 	
 	
 	
