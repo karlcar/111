@@ -4029,3 +4029,487 @@ org.thymeleaf.exceptions.TemplateProcessingException: Cannot execute subtraction
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar:8.5.28]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
 
+2020-02-27 17:07:33.379  INFO 7728 --- [Thread-29] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50ace394: startup date [Thu Feb 27 16:31:51 CST 2020]; root of context hierarchy
+2020-02-27 17:07:33.380  INFO 7728 --- [Thread-29] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-02-27 17:07:33.380  INFO 7728 --- [Thread-29] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-02-27 17:07:33.381  INFO 7728 --- [Thread-29] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:07:33.381  INFO 7728 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2020-02-27 17:07:33.383  INFO 7728 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2020-02-27 17:07:33.758  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Starting IdeaspringbootApplication on LAPTOP-1QQRN8UB with PID 7728 (D:\JAVA\eclipse\File\blog\target\classes started by karlcar in D:\JAVA\eclipse\File\blog)
+2020-02-27 17:07:33.759  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : The following profiles are active: dev
+2020-02-27 17:07:33.760  INFO 7728 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7416e0ef: startup date [Thu Feb 27 17:07:33 CST 2020]; root of context hierarchy
+2020-02-27 17:07:33.996  INFO 7728 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bde3239] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-27 17:07:34.081  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-27 17:07:34.082  INFO 7728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-27 17:07:34.082  INFO 7728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2020-02-27 17:07:34.082  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-02-27 17:07:34.083  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-27 17:07:34.083  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-27 17:07:34.083  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-02-27 17:07:34.092  INFO 7728 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-27 17:07:34.092  INFO 7728 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 332 ms
+2020-02-27 17:07:34.135  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-02-27 17:07:34.135  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-27 17:07:34.135  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-27 17:07:34.135  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-27 17:07:34.136  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-27 17:07:34.182  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2020-02-27 17:07:34.185  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2020-02-27 17:07:34.193  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:07:34.193  INFO 7728 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-27 17:07:34.209  INFO 7728 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-27 17:07:34.354  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:07:34.703  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7416e0ef: startup date [Thu Feb 27 17:07:33 CST 2020]; root of context hierarchy
+2020-02-27 17:07:34.713  WARN 7728 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-27 17:07:34.718  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.BlogController.list()
+2020-02-27 17:07:34.718  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.loginPage()
+2020-02-27 17:07:34.718  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:07:34.718  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-02-27 17:07:34.719  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.list(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-02-27 17:07:34.719  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.input()
+2020-02-27 17:07:34.719  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.TypeController.post(springBoot.po.Type,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:07:34.719  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String springBoot.controller.indexController.index()
+2020-02-27 17:07:34.719  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types]}" onto public java.lang.String springBoot.controller.indexController.Type()
+2020-02-27 17:07:34.719  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags]}" onto public java.lang.String springBoot.controller.indexController.Tag()
+2020-02-27 17:07:34.719  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog]}" onto public java.lang.String springBoot.controller.indexController.blog()
+2020-02-27 17:07:34.721  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-27 17:07:34.722  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-27 17:07:34.743  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:07:34.744  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:07:34.751  INFO 7728 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-02-27 17:07:34.760  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:07:34.796  INFO 7728 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-27 17:07:34.881  INFO 7728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-27 17:07:34.917  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-02-27 17:07:34.917  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-02-27 17:07:34.919  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-02-27 17:07:34.927  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-27 17:07:34.927  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Started IdeaspringbootApplication in 1.194 seconds (JVM running for 3196.605)
+2020-02-27 17:07:34.928  INFO 7728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-27 17:09:58.628  INFO 7728 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-02-27 17:09:58.628  INFO 7728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-27 17:09:58.640  INFO 7728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2020-02-27 17:10:01.966  INFO 7728 --- [http-nio-8080-exec-7] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-02-27 17:10:23.542  INFO 7728 --- [Thread-35] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7416e0ef: startup date [Thu Feb 27 17:07:33 CST 2020]; root of context hierarchy
+2020-02-27 17:10:23.543  INFO 7728 --- [Thread-35] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-02-27 17:10:23.543  INFO 7728 --- [Thread-35] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-02-27 17:10:23.543  INFO 7728 --- [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:10:23.543  INFO 7728 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2020-02-27 17:10:23.546  INFO 7728 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2020-02-27 17:10:23.873  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Starting IdeaspringbootApplication on LAPTOP-1QQRN8UB with PID 7728 (D:\JAVA\eclipse\File\blog\target\classes started by karlcar in D:\JAVA\eclipse\File\blog)
+2020-02-27 17:10:23.873  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : The following profiles are active: dev
+2020-02-27 17:10:23.874  INFO 7728 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@51a9b642: startup date [Thu Feb 27 17:10:23 CST 2020]; root of context hierarchy
+2020-02-27 17:10:24.068  INFO 7728 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bde3239] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-27 17:10:24.137  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-27 17:10:24.138  INFO 7728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-27 17:10:24.138  INFO 7728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2020-02-27 17:10:24.139  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-02-27 17:10:24.139  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-27 17:10:24.139  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-27 17:10:24.140  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-02-27 17:10:24.147  INFO 7728 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-27 17:10:24.147  INFO 7728 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 273 ms
+2020-02-27 17:10:24.185  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-02-27 17:10:24.185  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-27 17:10:24.185  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-27 17:10:24.185  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-27 17:10:24.185  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-27 17:10:24.223  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2020-02-27 17:10:24.226  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2020-02-27 17:10:24.232  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:10:24.232  INFO 7728 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-27 17:10:24.247  INFO 7728 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-27 17:10:24.395  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:10:24.701  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@51a9b642: startup date [Thu Feb 27 17:10:23 CST 2020]; root of context hierarchy
+2020-02-27 17:10:24.711  WARN 7728 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-27 17:10:24.714  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.BlogController.list()
+2020-02-27 17:10:24.715  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.loginPage()
+2020-02-27 17:10:24.715  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:10:24.715  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-02-27 17:10:24.716  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.list(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-02-27 17:10:24.716  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.input()
+2020-02-27 17:10:24.716  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.TypeController.post(springBoot.po.Type,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:10:24.716  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String springBoot.controller.indexController.index()
+2020-02-27 17:10:24.716  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types]}" onto public java.lang.String springBoot.controller.indexController.Type()
+2020-02-27 17:10:24.717  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags]}" onto public java.lang.String springBoot.controller.indexController.Tag()
+2020-02-27 17:10:24.717  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog]}" onto public java.lang.String springBoot.controller.indexController.blog()
+2020-02-27 17:10:24.719  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-27 17:10:24.719  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-27 17:10:24.740  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:10:24.740  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:10:24.747  INFO 7728 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-02-27 17:10:24.756  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:10:24.785  INFO 7728 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-27 17:10:24.860  INFO 7728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-27 17:10:24.893  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-02-27 17:10:24.893  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-02-27 17:10:24.895  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-02-27 17:10:24.901  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-27 17:10:24.901  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Started IdeaspringbootApplication in 1.046 seconds (JVM running for 3366.579)
+2020-02-27 17:10:24.903  INFO 7728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-27 17:10:25.767  INFO 7728 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-02-27 17:10:25.767  INFO 7728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-27 17:10:25.774  INFO 7728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 7 ms
+2020-02-27 17:10:31.218  INFO 7728 --- [http-nio-8080-exec-9] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-02-27 17:17:20.133  INFO 7728 --- [Thread-41] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@51a9b642: startup date [Thu Feb 27 17:10:23 CST 2020]; root of context hierarchy
+2020-02-27 17:17:20.134  INFO 7728 --- [Thread-41] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-02-27 17:17:20.134  INFO 7728 --- [Thread-41] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-02-27 17:17:20.134  INFO 7728 --- [Thread-41] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:17:20.134  INFO 7728 --- [Thread-41] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2020-02-27 17:17:20.137  INFO 7728 --- [Thread-41] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2020-02-27 17:17:20.406  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Starting IdeaspringbootApplication on LAPTOP-1QQRN8UB with PID 7728 (D:\JAVA\eclipse\File\blog\target\classes started by karlcar in D:\JAVA\eclipse\File\blog)
+2020-02-27 17:17:20.406  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : The following profiles are active: dev
+2020-02-27 17:17:20.407  INFO 7728 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@170e6b5c: startup date [Thu Feb 27 17:17:20 CST 2020]; root of context hierarchy
+2020-02-27 17:17:20.622  INFO 7728 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bde3239] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-27 17:17:20.705  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-27 17:17:20.706  INFO 7728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-27 17:17:20.706  INFO 7728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2020-02-27 17:17:20.707  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-02-27 17:17:20.708  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-27 17:17:20.708  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-27 17:17:20.708  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-02-27 17:17:20.717  INFO 7728 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-27 17:17:20.718  INFO 7728 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 311 ms
+2020-02-27 17:17:20.758  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-02-27 17:17:20.759  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-27 17:17:20.759  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-27 17:17:20.759  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-27 17:17:20.759  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-27 17:17:20.805  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2020-02-27 17:17:20.809  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2020-02-27 17:17:20.821  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:17:20.821  INFO 7728 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-27 17:17:20.842  INFO 7728 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-27 17:17:21.031  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:17:21.380  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@170e6b5c: startup date [Thu Feb 27 17:17:20 CST 2020]; root of context hierarchy
+2020-02-27 17:17:21.391  WARN 7728 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-27 17:17:21.395  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.BlogController.list()
+2020-02-27 17:17:21.396  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.loginPage()
+2020-02-27 17:17:21.396  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:17:21.396  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-02-27 17:17:21.397  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.list(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-02-27 17:17:21.397  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.input()
+2020-02-27 17:17:21.397  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.TypeController.post(springBoot.po.Type,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:17:21.397  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String springBoot.controller.indexController.index()
+2020-02-27 17:17:21.397  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types]}" onto public java.lang.String springBoot.controller.indexController.Type()
+2020-02-27 17:17:21.397  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags]}" onto public java.lang.String springBoot.controller.indexController.Tag()
+2020-02-27 17:17:21.397  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog]}" onto public java.lang.String springBoot.controller.indexController.blog()
+2020-02-27 17:17:21.399  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-27 17:17:21.399  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-27 17:17:21.420  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:17:21.420  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:17:21.428  INFO 7728 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-02-27 17:17:21.438  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:17:21.472  INFO 7728 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-27 17:17:21.561  INFO 7728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-27 17:17:21.600  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-02-27 17:17:21.601  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-02-27 17:17:21.603  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-02-27 17:17:21.608  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-27 17:17:21.608  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Started IdeaspringbootApplication in 1.228 seconds (JVM running for 3783.286)
+2020-02-27 17:17:21.609  INFO 7728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-27 17:19:22.285  INFO 7728 --- [Thread-47] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@170e6b5c: startup date [Thu Feb 27 17:17:20 CST 2020]; root of context hierarchy
+2020-02-27 17:19:22.286  INFO 7728 --- [Thread-47] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-02-27 17:19:22.286  INFO 7728 --- [Thread-47] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-02-27 17:19:22.286  INFO 7728 --- [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:19:22.286  INFO 7728 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2020-02-27 17:19:22.290  INFO 7728 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2020-02-27 17:19:22.730  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Starting IdeaspringbootApplication on LAPTOP-1QQRN8UB with PID 7728 (D:\JAVA\eclipse\File\blog\target\classes started by karlcar in D:\JAVA\eclipse\File\blog)
+2020-02-27 17:19:22.731  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : The following profiles are active: dev
+2020-02-27 17:19:22.732  INFO 7728 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a7c9bdb: startup date [Thu Feb 27 17:19:22 CST 2020]; root of context hierarchy
+2020-02-27 17:19:22.952  INFO 7728 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bde3239] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-27 17:19:23.030  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-27 17:19:23.031  INFO 7728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-27 17:19:23.031  INFO 7728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2020-02-27 17:19:23.032  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-02-27 17:19:23.032  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-27 17:19:23.032  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-27 17:19:23.032  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-02-27 17:19:23.039  INFO 7728 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-27 17:19:23.039  INFO 7728 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 307 ms
+2020-02-27 17:19:23.077  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-02-27 17:19:23.078  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-27 17:19:23.078  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-27 17:19:23.078  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-27 17:19:23.078  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-27 17:19:23.119  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2020-02-27 17:19:23.122  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2020-02-27 17:19:23.129  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:19:23.130  INFO 7728 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-27 17:19:23.145  INFO 7728 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-27 17:19:23.305  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:19:23.633  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a7c9bdb: startup date [Thu Feb 27 17:19:22 CST 2020]; root of context hierarchy
+2020-02-27 17:19:23.643  WARN 7728 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-27 17:19:23.648  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.BlogController.list()
+2020-02-27 17:19:23.648  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.loginPage()
+2020-02-27 17:19:23.649  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:19:23.649  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-02-27 17:19:23.649  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.list(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-02-27 17:19:23.649  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.input()
+2020-02-27 17:19:23.650  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.TypeController.post(springBoot.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:19:23.650  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String springBoot.controller.indexController.index()
+2020-02-27 17:19:23.650  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types]}" onto public java.lang.String springBoot.controller.indexController.Type()
+2020-02-27 17:19:23.650  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags]}" onto public java.lang.String springBoot.controller.indexController.Tag()
+2020-02-27 17:19:23.650  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog]}" onto public java.lang.String springBoot.controller.indexController.blog()
+2020-02-27 17:19:23.651  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-27 17:19:23.652  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-27 17:19:23.674  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:19:23.674  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:19:23.682  INFO 7728 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-02-27 17:19:23.692  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:19:23.725  INFO 7728 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-27 17:19:23.810  INFO 7728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-27 17:19:23.845  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-02-27 17:19:23.846  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-02-27 17:19:23.848  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-02-27 17:19:23.853  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-27 17:19:23.853  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Started IdeaspringbootApplication in 1.143 seconds (JVM running for 3905.531)
+2020-02-27 17:19:23.854  INFO 7728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-27 17:20:02.558  INFO 7728 --- [Thread-53] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a7c9bdb: startup date [Thu Feb 27 17:19:22 CST 2020]; root of context hierarchy
+2020-02-27 17:20:02.559  INFO 7728 --- [Thread-53] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-02-27 17:20:02.559  INFO 7728 --- [Thread-53] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-02-27 17:20:02.560  INFO 7728 --- [Thread-53] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:20:02.560  INFO 7728 --- [Thread-53] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2020-02-27 17:20:02.564  INFO 7728 --- [Thread-53] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2020-02-27 17:20:02.851  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Starting IdeaspringbootApplication on LAPTOP-1QQRN8UB with PID 7728 (D:\JAVA\eclipse\File\blog\target\classes started by karlcar in D:\JAVA\eclipse\File\blog)
+2020-02-27 17:20:02.851  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : The following profiles are active: dev
+2020-02-27 17:20:02.853  INFO 7728 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64d8483d: startup date [Thu Feb 27 17:20:02 CST 2020]; root of context hierarchy
+2020-02-27 17:20:03.052  INFO 7728 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bde3239] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-27 17:20:03.125  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-27 17:20:03.126  INFO 7728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-27 17:20:03.126  INFO 7728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2020-02-27 17:20:03.127  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-02-27 17:20:03.128  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-27 17:20:03.128  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-27 17:20:03.128  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-02-27 17:20:03.135  INFO 7728 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-27 17:20:03.135  INFO 7728 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 282 ms
+2020-02-27 17:20:03.172  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-02-27 17:20:03.172  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-27 17:20:03.172  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-27 17:20:03.172  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-27 17:20:03.172  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-27 17:20:03.213  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2020-02-27 17:20:03.216  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2020-02-27 17:20:03.222  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:20:03.222  INFO 7728 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-27 17:20:03.237  INFO 7728 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-27 17:20:03.375  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:20:03.682  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64d8483d: startup date [Thu Feb 27 17:20:02 CST 2020]; root of context hierarchy
+2020-02-27 17:20:03.692  WARN 7728 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-27 17:20:03.696  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.BlogController.list()
+2020-02-27 17:20:03.697  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.loginPage()
+2020-02-27 17:20:03.697  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:20:03.697  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-02-27 17:20:03.698  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.list(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-02-27 17:20:03.698  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.input()
+2020-02-27 17:20:03.698  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.TypeController.post(springBoot.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:20:03.698  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String springBoot.controller.indexController.index()
+2020-02-27 17:20:03.698  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types]}" onto public java.lang.String springBoot.controller.indexController.Type()
+2020-02-27 17:20:03.698  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags]}" onto public java.lang.String springBoot.controller.indexController.Tag()
+2020-02-27 17:20:03.698  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog]}" onto public java.lang.String springBoot.controller.indexController.blog()
+2020-02-27 17:20:03.700  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-27 17:20:03.700  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-27 17:20:03.720  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:20:03.721  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:20:03.728  INFO 7728 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-02-27 17:20:03.736  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:20:03.766  INFO 7728 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-27 17:20:03.841  INFO 7728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-27 17:20:03.874  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-02-27 17:20:03.874  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-02-27 17:20:03.877  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-02-27 17:20:03.882  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-27 17:20:03.882  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Started IdeaspringbootApplication in 1.05 seconds (JVM running for 3945.56)
+2020-02-27 17:20:03.883  INFO 7728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-27 17:20:35.354  INFO 7728 --- [Thread-59] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64d8483d: startup date [Thu Feb 27 17:20:02 CST 2020]; root of context hierarchy
+2020-02-27 17:20:35.354  INFO 7728 --- [Thread-59] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-02-27 17:20:35.355  INFO 7728 --- [Thread-59] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-02-27 17:20:35.355  INFO 7728 --- [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:20:35.355  INFO 7728 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2020-02-27 17:20:35.361  INFO 7728 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2020-02-27 17:20:35.682  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Starting IdeaspringbootApplication on LAPTOP-1QQRN8UB with PID 7728 (D:\JAVA\eclipse\File\blog\target\classes started by karlcar in D:\JAVA\eclipse\File\blog)
+2020-02-27 17:20:35.682  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : The following profiles are active: dev
+2020-02-27 17:20:35.684  INFO 7728 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66dfb38d: startup date [Thu Feb 27 17:20:35 CST 2020]; root of context hierarchy
+2020-02-27 17:20:35.892  INFO 7728 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bde3239] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-27 17:20:35.968  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-27 17:20:35.968  INFO 7728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-27 17:20:35.968  INFO 7728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2020-02-27 17:20:35.969  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-02-27 17:20:35.970  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-27 17:20:35.970  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-27 17:20:35.970  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-02-27 17:20:35.978  INFO 7728 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-27 17:20:35.978  INFO 7728 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 294 ms
+2020-02-27 17:20:36.015  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-02-27 17:20:36.015  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-27 17:20:36.015  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-27 17:20:36.015  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-27 17:20:36.015  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-27 17:20:36.056  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2020-02-27 17:20:36.060  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2020-02-27 17:20:36.066  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:20:36.066  INFO 7728 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-27 17:20:36.081  INFO 7728 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-27 17:20:36.225  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:20:36.559  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66dfb38d: startup date [Thu Feb 27 17:20:35 CST 2020]; root of context hierarchy
+2020-02-27 17:20:36.570  WARN 7728 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-27 17:20:36.574  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.BlogController.list()
+2020-02-27 17:20:36.574  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.loginPage()
+2020-02-27 17:20:36.574  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:20:36.574  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-02-27 17:20:36.575  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.list(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-02-27 17:20:36.575  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.input()
+2020-02-27 17:20:36.575  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.TypeController.post(springBoot.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:20:36.575  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String springBoot.controller.indexController.index()
+2020-02-27 17:20:36.575  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types]}" onto public java.lang.String springBoot.controller.indexController.Type()
+2020-02-27 17:20:36.575  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags]}" onto public java.lang.String springBoot.controller.indexController.Tag()
+2020-02-27 17:20:36.576  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog]}" onto public java.lang.String springBoot.controller.indexController.blog()
+2020-02-27 17:20:36.578  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-27 17:20:36.579  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-27 17:20:36.600  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:20:36.601  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:20:36.609  INFO 7728 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-02-27 17:20:36.617  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:20:36.649  INFO 7728 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-27 17:20:36.729  INFO 7728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-27 17:20:36.764  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-02-27 17:20:36.764  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-02-27 17:20:36.766  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-02-27 17:20:36.772  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-27 17:20:36.772  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Started IdeaspringbootApplication in 1.11 seconds (JVM running for 3978.45)
+2020-02-27 17:20:36.774  INFO 7728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-27 17:29:12.617  INFO 7728 --- [Thread-65] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66dfb38d: startup date [Thu Feb 27 17:20:35 CST 2020]; root of context hierarchy
+2020-02-27 17:29:12.618  INFO 7728 --- [Thread-65] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-02-27 17:29:12.618  INFO 7728 --- [Thread-65] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-02-27 17:29:12.619  INFO 7728 --- [Thread-65] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:29:12.619  INFO 7728 --- [Thread-65] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2020-02-27 17:29:12.622  INFO 7728 --- [Thread-65] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2020-02-27 17:29:12.970  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Starting IdeaspringbootApplication on LAPTOP-1QQRN8UB with PID 7728 (D:\JAVA\eclipse\File\blog\target\classes started by karlcar in D:\JAVA\eclipse\File\blog)
+2020-02-27 17:29:12.970  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : The following profiles are active: dev
+2020-02-27 17:29:12.971  INFO 7728 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2fc23204: startup date [Thu Feb 27 17:29:12 CST 2020]; root of context hierarchy
+2020-02-27 17:29:13.176  INFO 7728 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bde3239] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-27 17:29:13.252  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-27 17:29:13.253  INFO 7728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-27 17:29:13.253  INFO 7728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2020-02-27 17:29:13.254  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-02-27 17:29:13.255  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-27 17:29:13.255  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-27 17:29:13.255  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-02-27 17:29:13.262  INFO 7728 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-27 17:29:13.262  INFO 7728 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 291 ms
+2020-02-27 17:29:13.299  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-02-27 17:29:13.299  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-27 17:29:13.299  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-27 17:29:13.299  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-27 17:29:13.299  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-27 17:29:13.337  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2020-02-27 17:29:13.340  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2020-02-27 17:29:13.345  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:29:13.345  INFO 7728 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-27 17:29:13.360  INFO 7728 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-27 17:29:13.501  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:29:13.829  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2fc23204: startup date [Thu Feb 27 17:29:12 CST 2020]; root of context hierarchy
+2020-02-27 17:29:13.839  WARN 7728 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-27 17:29:13.843  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.BlogController.list()
+2020-02-27 17:29:13.843  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.loginPage()
+2020-02-27 17:29:13.843  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:29:13.844  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-02-27 17:29:13.844  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.list(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-02-27 17:29:13.844  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.input(org.springframework.ui.Model)
+2020-02-27 17:29:13.844  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.TypeController.post(springBoot.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:29:13.844  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String springBoot.controller.indexController.index()
+2020-02-27 17:29:13.844  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types]}" onto public java.lang.String springBoot.controller.indexController.Type()
+2020-02-27 17:29:13.844  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags]}" onto public java.lang.String springBoot.controller.indexController.Tag()
+2020-02-27 17:29:13.844  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog]}" onto public java.lang.String springBoot.controller.indexController.blog()
+2020-02-27 17:29:13.846  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-27 17:29:13.846  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-27 17:29:13.870  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:29:13.870  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:29:13.877  INFO 7728 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-02-27 17:29:13.887  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:29:13.919  INFO 7728 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-27 17:29:14.005  INFO 7728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-27 17:29:14.038  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-02-27 17:29:14.039  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-02-27 17:29:14.040  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-02-27 17:29:14.046  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-27 17:29:14.046  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Started IdeaspringbootApplication in 1.095 seconds (JVM running for 4495.724)
+2020-02-27 17:29:14.047  INFO 7728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-27 17:31:19.631  INFO 7728 --- [Thread-71] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2fc23204: startup date [Thu Feb 27 17:29:12 CST 2020]; root of context hierarchy
+2020-02-27 17:31:19.632  INFO 7728 --- [Thread-71] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-02-27 17:31:19.632  INFO 7728 --- [Thread-71] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-02-27 17:31:19.633  INFO 7728 --- [Thread-71] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:31:19.633  INFO 7728 --- [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2020-02-27 17:31:19.638  INFO 7728 --- [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2020-02-27 17:31:19.896  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Starting IdeaspringbootApplication on LAPTOP-1QQRN8UB with PID 7728 (D:\JAVA\eclipse\File\blog\target\classes started by karlcar in D:\JAVA\eclipse\File\blog)
+2020-02-27 17:31:19.896  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : The following profiles are active: dev
+2020-02-27 17:31:19.897  INFO 7728 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60125859: startup date [Thu Feb 27 17:31:19 CST 2020]; root of context hierarchy
+2020-02-27 17:31:20.097  INFO 7728 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bde3239] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-27 17:31:20.171  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-27 17:31:20.171  INFO 7728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-27 17:31:20.171  INFO 7728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2020-02-27 17:31:20.172  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-02-27 17:31:20.173  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-27 17:31:20.173  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-27 17:31:20.173  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-02-27 17:31:20.191  INFO 7728 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-27 17:31:20.191  INFO 7728 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 294 ms
+2020-02-27 17:31:20.226  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-02-27 17:31:20.227  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-27 17:31:20.227  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-27 17:31:20.227  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-27 17:31:20.227  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-27 17:31:20.266  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2020-02-27 17:31:20.269  INFO 7728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2020-02-27 17:31:20.274  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:31:20.274  INFO 7728 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-27 17:31:20.288  INFO 7728 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-27 17:31:20.416  INFO 7728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 17:31:20.724  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60125859: startup date [Thu Feb 27 17:31:19 CST 2020]; root of context hierarchy
+2020-02-27 17:31:20.735  WARN 7728 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-27 17:31:20.739  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.BlogController.list()
+2020-02-27 17:31:20.740  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.loginPage()
+2020-02-27 17:31:20.740  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:31:20.740  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-02-27 17:31:20.740  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.list(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-02-27 17:31:20.740  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String springBoot.controller.admin.TypeController.input(org.springframework.ui.Model)
+2020-02-27 17:31:20.740  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String springBoot.controller.admin.TypeController.post(springBoot.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-02-27 17:31:20.740  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String springBoot.controller.indexController.index()
+2020-02-27 17:31:20.740  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types]}" onto public java.lang.String springBoot.controller.indexController.Type()
+2020-02-27 17:31:20.740  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags]}" onto public java.lang.String springBoot.controller.indexController.Tag()
+2020-02-27 17:31:20.740  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog]}" onto public java.lang.String springBoot.controller.indexController.blog()
+2020-02-27 17:31:20.741  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-27 17:31:20.742  INFO 7728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-27 17:31:20.763  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:31:20.763  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:31:20.772  INFO 7728 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-02-27 17:31:20.780  INFO 7728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 17:31:20.810  INFO 7728 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-27 17:31:20.889  INFO 7728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-27 17:31:20.921  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-02-27 17:31:20.922  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-02-27 17:31:20.923  INFO 7728 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-02-27 17:31:20.928  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-27 17:31:20.929  INFO 7728 --- [restartedMain] springBoot.IdeaspringbootApplication     : Started IdeaspringbootApplication in 1.051 seconds (JVM running for 4622.607)
+2020-02-27 17:31:20.931  INFO 7728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-27 17:31:24.161  INFO 7728 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-02-27 17:31:24.161  INFO 7728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-27 17:31:24.167  INFO 7728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 6 ms
+2020-02-27 17:31:27.135  INFO 7728 --- [http-nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory

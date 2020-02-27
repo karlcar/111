@@ -19,7 +19,7 @@ public class Type {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	
-	//@NotBlank(message="分类名称不能为空")
+	@NotBlank(message="分类名称不能为空")
 	private String name;
 	
 	@OneToMany(mappedBy = "type")
