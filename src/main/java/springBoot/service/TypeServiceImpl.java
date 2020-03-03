@@ -1,5 +1,7 @@
 package springBoot.service;
 
+import java.util.List;
+
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -56,6 +58,11 @@ public class TypeServiceImpl implements TypeService {
 	@Override
 	public void deleteType(Long id) {
 		typeRepository.deleteById(id);
+	}
+
+	@Override
+	public List<Type> listType() {
+		return typeRepository.findAll();
 	}
 
 }

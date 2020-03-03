@@ -19,6 +19,7 @@ import springBoot.NotFoundException;
 import springBoot.dao.BlogRepository;
 import springBoot.po.Blog;
 import springBoot.po.Type;
+import springBoot.vo.BlogQuery;
 
 @Service
 public class BlogServiceImpl implements BlogService {
@@ -33,20 +34,20 @@ public class BlogServiceImpl implements BlogService {
 	
 	//动态组合查询条件进行分页查询 
 	@Override
-	public Page<Blog> listBlog(Pageable pageable, Blog blog) {
+	public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
 		return blogRepository.findAll(new Specification<Blog>() {
 			
 			@Override
 			public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {	//root代表你要查询的对象，cq代表装查询条件的容器，cb代表具体条件的表达式
 				List<Predicate> predicates = new ArrayList<>();		//组合的条件
 				//title的查询条件
-				if((!blog.getTitle().equals("")) && blog.getTitle() != null) {
+				if(!"".equals(blog.getTitle()) && blog.getTitle() != null) {
 					predicates.add(cb.like(root.<String>get("title"),"%"+ blog.getTitle() + "%"));		//构建like表达式，属性的名字和属性的值
-				}
+				} 
 				//分类的查询条件
-				if(blog.getType().getId() != null) {	//因为long类型id不存在""的情况  
-					predicates.add(cb.equal(root.<Type>get("type").get("id"), blog.getType().getId()));
-				}
+				if(blog.getTypeId() != null) {	//因为long类型id不存在""的情况  
+					predicates.add(cb.equal(root.<Type>get("type").get("id"), blog.getTypeId()));
+				} 
 				
 				//是否推荐
 				if(blog.isRecommend()) {
