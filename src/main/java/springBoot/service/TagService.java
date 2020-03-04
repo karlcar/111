@@ -1,5 +1,7 @@
 package springBoot.service;
 
+import java.util.List;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -19,4 +21,6 @@ public interface TagService {
 	Tag updateTag(Long id, Tag tag);
 	
 	void deleteTag(Long id);
+	
+	List<Tag> listTag();	//blogs搜索条件的标签里面的内容列表
 }
