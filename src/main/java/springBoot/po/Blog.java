@@ -25,7 +25,7 @@ import javax.persistence.Transient;
 public class Blog {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long id;
+	private Long id;
 	
 	private String title;		//标题
 	
@@ -62,16 +62,17 @@ public class Blog {
 	private String tagIds;	//博客提交时候的选中的字符串的ids，这里的@Transient表示不会入库的
 	
 	
+	
 	public Blog() {
 	}
+	
 
-
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -165,13 +166,16 @@ public class Blog {
 		this.recommend = recommend;
 	}
 
+
 	public boolean isPublished() {
 		return published;
 	}
 
+
 	public void setPublished(boolean published) {
 		this.published = published;
 	}
+
 
 	public Date getCreateTime() {
 		return createTime;
@@ -192,15 +196,16 @@ public class Blog {
 		this.updateTime = updateTime;
 	}
 
+
 	public Type getType() {
 		return type;
 	}
 
+
 	public void setType(Type type) {
 		this.type = type;
 	}
-	
-	
+
 
 	public List<Tag> getTags() {
 		return tags;
@@ -210,33 +215,60 @@ public class Blog {
 	public void setTags(List<Tag> tags) {
 		this.tags = tags;
 	}
-	
 
 
 	public User getUser() {
 		return user;
 	}
 
+
 	public void setUser(User user) {
 		this.user = user;
 	}
+
 
 	public List<Comment> getComments() {
 		return comments;
 	}
 
+
 	public void setComments(List<Comment> comments) {
 		this.comments = comments;
 	}
+
 
 	public String getTagIds() {
 		return tagIds;
 	}
 
+
 	public void setTagIds(String tagIds) {
 		this.tagIds = tagIds;
 	}
 
+
+	//初始化例如tagIds，将数组重新转化成字符串
+	public void init() {
+		this.tagIds = tagsToIds(this.getTags());
+	}
+	
+	private String tagsToIds(List<Tag> tags) {
+        if (!tags.isEmpty()) {
+            StringBuffer ids = new StringBuffer();
+            boolean flag = false;
+            for (Tag tag : tags) {
+                if (flag) {
+                    ids.append(",");
+                } else {
+                    flag = true;
+                }
+                ids.append(tag.getId());
+            }
+            return ids.toString();
+        } else {
+            return tagIds;
+        }
+    }
  
 	@Override
 	public String toString() {
