@@ -119,7 +119,7 @@
           <div class="field">
             <div class="ui checkbox">
               <input type="checkbox" id="shareStatement" name="shareInfo" class="hidden">
-              <label for="shareInfo">转载声明</label>
+              <label for="shareStatement">转载声明</label>
             </div>
           </div>
           <div class="field">
@@ -246,13 +246,13 @@
     });
     
     //博客提交时候，将发布和保存两个按钮设置true和false值并提交
-    $('#save-btn').click(function(){
-		$('[name="pubished"]').value(false); 
-		$('#blog-form').submit();
+    $('#save-btn').click(function () {
+      $('[name="published"]').val(false);
+      $('#blog-form').submit();
     });
-    $('#publish-btn').click(function(){
-		$('[name="pubished"]').value(true);  
-		$('#blog-form').submit();
+    $('#publish-btn').click(function () {
+      $('[name="published"]').val(true);
+      $('#blog-form').submit();
     });
 
   </script>

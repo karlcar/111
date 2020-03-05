@@ -1,6 +1,7 @@
 package springBoot.service;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -14,6 +15,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import springBoot.NotFoundException;
 import springBoot.dao.BlogRepository;
@@ -59,12 +61,17 @@ public class BlogServiceImpl implements BlogService {
 			}
 		}, pageable);
 	}
-
+	
+	@Transactional
 	@Override
 	public Blog saveBlog(Blog blog) {
+		blog.setCreateTime(new Date());		//初始化创建时间
+		blog.setUpdateTime(new Date());		//初始化更新时间
+		blog.setViews(0);					//初始化浏览人数
 		return blogRepository.save(blog);
 	}
-
+	
+	@Transactional 
 	@Override
 	public Blog updateBlog(Long id, Blog blog) {
 		Blog b = blogRepository.findById(id).orElse(null);
@@ -74,7 +81,8 @@ public class BlogServiceImpl implements BlogService {
 		BeanUtils.copyProperties(blog, b);
 		return blogRepository.save(b);
 	}
-
+	
+	@Transactional
 	@Override
 	public void deleteBlog(Long id) {
 		blogRepository.deleteById(id);

@@ -4,17 +4,21 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 
 @Entity			//使用的是jpa所以需要加入此标记
 @Table(name = "t_blog")	//指定数据库里面的table
@@ -24,7 +28,11 @@ public class Blog {
 	private long id;
 	
 	private String title;		//标题
+	
+	@Basic(fetch = FetchType.LAZY) 
+	@Lob
 	private String content;		//内容
+	
 	private String firstPicture;	//首图
 	private String flag;		//标记
 	private Integer views;		//浏览次数
@@ -32,7 +40,7 @@ public class Blog {
 	private boolean shareStatement;		//版权开启
 	private boolean commentabled;		//评论开启
 	private boolean recommend;		//是否推荐
-	private boolean pubished;		//发布
+	private boolean published;		//发布
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createTime;		//创建时间
 	@Temporal(TemporalType.TIMESTAMP)
@@ -50,6 +58,8 @@ public class Blog {
 	@OneToMany(mappedBy = "blog")
 	private List<Comment> comments = new ArrayList<>();
 	
+	@Transient	
+	private String tagIds;	//博客提交时候的选中的字符串的ids，这里的@Transient表示不会入库的
 	
 	
 	public Blog() {
@@ -155,16 +165,13 @@ public class Blog {
 		this.recommend = recommend;
 	}
 
-
-	public boolean isPubished() {
-		return pubished;
+	public boolean isPublished() {
+		return published;
 	}
 
-
-	public void setPubished(boolean pubished) {
-		this.pubished = pubished;
+	public void setPublished(boolean published) {
+		this.published = published;
 	}
-
 
 	public Date getCreateTime() {
 		return createTime;
@@ -222,13 +229,21 @@ public class Blog {
 		this.comments = comments;
 	}
 
+	public String getTagIds() {
+		return tagIds;
+	}
 
+	public void setTagIds(String tagIds) {
+		this.tagIds = tagIds;
+	}
+
+ 
 	@Override
 	public String toString() {
 		return "blog [id=" + id + ", title=" + title + ", content=" + content + ", firstPicture=" + firstPicture
 				+ ", flag=" + flag + ", views=" + views + ", appreciation=" + appreciation + ", shareStatement="
-				+ shareStatement + ", commentabled=" + commentabled + ", recommend=" + recommend + ", pubished="
-				+ pubished + ", createTime=" + createTime + ", updateTime=" + updateTime + "]";
+				+ shareStatement + ", commentabled=" + commentabled + ", recommend=" + recommend + ", published="
+				+ published + ", createTime=" + createTime + ", updateTime=" + updateTime + "]";
 	}
 	
 	

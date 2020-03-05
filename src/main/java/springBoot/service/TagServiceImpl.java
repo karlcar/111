@@ -1,5 +1,6 @@
 package springBoot.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.BeanUtils;
@@ -64,4 +65,20 @@ public class TagServiceImpl implements TagService {
 		return tagRepository.findAll();
 	}
 
+	@Override
+	public List<Tag> listTag(String ids) {	//1,2,3
+		return tagRepository.findAllById(convertToList(ids));
+	}
+	
+	private List<Long> convertToList(String ids) {	//将字符串转换成数组
+        List<Long> list = new ArrayList<>();
+        if (!"".equals(ids) && ids != null) {
+            String[] idarray = ids.split(",");
+            for (int i=0; i < idarray.length;i++) {
+                list.add(new Long(idarray[i]));
+            }
+        }
+        return list;
+    }
+	
 }
