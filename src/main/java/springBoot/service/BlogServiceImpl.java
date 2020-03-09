@@ -21,6 +21,7 @@ import springBoot.NotFoundException;
 import springBoot.dao.BlogRepository;
 import springBoot.po.Blog;
 import springBoot.po.Type;
+import springBoot.util.MyBeanUtils;
 import springBoot.vo.BlogQuery;
 
 @Service
@@ -83,7 +84,9 @@ public class BlogServiceImpl implements BlogService {
 		if(b == null) {
 			throw new NotFoundException("该博客不存在");
 		}
-		BeanUtils.copyProperties(blog, b);
+//		BeanUtils.copyProperties(blog, b);
+		BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));
+        b.setUpdateTime(new Date());				//此两行为了在修改之后，不会初始，直接将原本没有修改的也一并写入数据库
 		return blogRepository.save(b);
 	}
 	
@@ -92,5 +95,12 @@ public class BlogServiceImpl implements BlogService {
 	public void deleteBlog(Long id) {
 		blogRepository.deleteById(id);
 	}
+
+	@Override
+	public Page<Blog> listBlog(Pageable pageable) {
+		return blogRepository.findAll(pageable);
+	}
+	
+	
 	
 }

@@ -46,6 +46,8 @@ public class Blog {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date updateTime;		//更新时间
 	
+	private String description;	    //描述
+	
 	@ManyToOne
 	private Type type;
 	
@@ -236,6 +238,13 @@ public class Blog {
 		this.comments = comments;
 	}
 
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
 
 	public String getTagIds() {
 		return tagIds;
@@ -272,10 +281,27 @@ public class Blog {
  
 	@Override
 	public String toString() {
-		return "blog [id=" + id + ", title=" + title + ", content=" + content + ", firstPicture=" + firstPicture
-				+ ", flag=" + flag + ", views=" + views + ", appreciation=" + appreciation + ", shareStatement="
-				+ shareStatement + ", commentabled=" + commentabled + ", recommend=" + recommend + ", published="
-				+ published + ", createTime=" + createTime + ", updateTime=" + updateTime + "]";
+		return "Blog{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", firstPicture='" + firstPicture + '\'' +
+                ", flag='" + flag + '\'' +
+                ", views=" + views +
+                ", appreciation=" + appreciation +
+                ", shareStatement=" + shareStatement +
+                ", commentabled=" + commentabled +
+                ", published=" + published +
+                ", recommend=" + recommend +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", type=" + type +
+                ", tags=" + tags +
+                ", user=" + user +
+                ", comments=" + comments +
+                ", tagIds='" + tagIds + '\'' +
+                ", description='" + description + '\'' +
+                '}';
 	}
 	
 	

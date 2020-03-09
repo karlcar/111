@@ -23,5 +23,5 @@ public interface TypeService {
 	
 	List<Type> listType();	//blogs搜索条件的分类里面的内容列表
 	
-	
+	List<Type> listTypeTop(Integer size);	//获取index首页的分类的获取的条目数量,例如我只展示5个分类
 }

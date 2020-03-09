@@ -18,6 +18,8 @@ public interface BlogService {
 	
 	void deleteBlog(Long id); //删除
 	
+	Page<Blog> listBlog(Pageable pageable);   //index页面左侧blog的分页
+	
 	
 	
 	

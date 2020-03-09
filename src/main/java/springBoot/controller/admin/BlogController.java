@@ -89,7 +89,13 @@ public class BlogController {
 		blog.setType(typeService.getType(blog.getType().getId()));		//这里是前端页面获取的type赋值给参数blog，然后new type并获取里面的id
 		blog.setTags(tagService.listTag(blog.getTagIds()));
 		
-		Blog b = blogService.saveBlog(blog);
+		Blog b;		
+		if(blog.getId() == null) {
+			b = blogService.saveBlog(blog);
+		}else {
+			b = blogService.updateBlog(blog.getId(), blog);
+		}
+		
 		if(b != null) {
 			attributes.addFlashAttribute("message", "新增成功");
 		}else {

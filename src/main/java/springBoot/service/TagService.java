@@ -25,4 +25,6 @@ public interface TagService {
 	List<Tag> listTag();	//blogs搜索条件的标签里面的内容列表
 	
 	List<Tag> listTag(String ids);	//提交时候获取多个值的id的集合
+	
+	List<Tag> listTagTop(Integer size);		//index页面的tag的条目展示
 }
