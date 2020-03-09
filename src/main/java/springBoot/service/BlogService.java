@@ -24,7 +24,7 @@ public interface BlogService {
 	
 	List<Blog> listRecommendBlogTop(Integer size);	 //index页面最新推荐的分页
 	
-	
+	Page<Blog> listBlog(String query,Pageable pageable);	//index页面的全局搜索
 	
 	
 	

@@ -6,7 +6,9 @@ import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import springBoot.service.BlogService;
 import springBoot.service.TagService;
@@ -23,7 +25,8 @@ public class indexController {
 	private TypeService typeService;
 	@Autowired
 	private TagService tagService;
-
+	
+	//index页面的blog、type、tag、recommend的分页展示
     @RequestMapping("/")
     public String index(@PageableDefault(size = 5, sort = {"updateTime"}, direction = Direction.DESC) 
 						Pageable pageable, 
@@ -35,7 +38,18 @@ public class indexController {
         return "index";
     } 
     
-    
+    //index页面的全局搜索（右上角）
+    @PostMapping("/search")
+    public String search(@PageableDefault(size = 5, sort = {"updateTime"}, direction = Direction.DESC) 
+						Pageable pageable, 
+						Model model,
+						@RequestParam String query) {  //这里的query是fragment里面的搜索框的输入域里面的name值query
+    	model.addAttribute("page", blogService.listBlog("%" + query + "%", pageable));	//查询返回页面
+    	model.addAttribute("query", query);		//查询之后要在搜索框保留搜索内容  
+    	
+    	
+    	return "search";
+    }
     
     
 }

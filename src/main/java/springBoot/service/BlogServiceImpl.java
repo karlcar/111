@@ -109,6 +109,13 @@ public class BlogServiceImpl implements BlogService {
 		Pageable pageable = PageRequest.of(0, size, sort);
 		return blogRepository.findTop(pageable);
 	}
+
+	@Override
+	public Page<Blog> listBlog(String query, Pageable pageable) {
+		return blogRepository.findByQuery(query, pageable);
+	}
+
+	
 	
 	
 	
