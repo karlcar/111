@@ -1,5 +1,7 @@
 package springBoot.service;
 
+import java.util.List;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -19,6 +21,8 @@ public interface BlogService {
 	void deleteBlog(Long id); //删除
 	
 	Page<Blog> listBlog(Pageable pageable);   //index页面左侧blog的分页
+	
+	List<Blog> listRecommendBlogTop(Integer size);	 //index页面最新推荐的分页
 	
 	
 	
