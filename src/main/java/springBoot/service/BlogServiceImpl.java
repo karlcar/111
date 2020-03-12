@@ -23,6 +23,7 @@ import springBoot.NotFoundException;
 import springBoot.dao.BlogRepository;
 import springBoot.po.Blog;
 import springBoot.po.Type;
+import springBoot.util.MarkdownUtils;
 import springBoot.util.MyBeanUtils;
 import springBoot.vo.BlogQuery;
 
@@ -34,7 +35,7 @@ public class BlogServiceImpl implements BlogService {
 	
 	@Override
 	public Blog getBlog(Long id) {
-		return blogRepository.findById(id).orElse(null);
+		return blogRepository.findById(id).orElse(null);		
 	}
 	
 	//动态组合查询条件进行分页查询 
@@ -113,6 +114,20 @@ public class BlogServiceImpl implements BlogService {
 	@Override
 	public Page<Blog> listBlog(String query, Pageable pageable) {
 		return blogRepository.findByQuery(query, pageable);
+	}
+
+	@Override
+	public Blog getAndConvert(Long id) {		//将文本从markdown转换成html
+		Blog blog = blogRepository.findById(id).orElse(null);
+		if(blog == null) {
+			throw new NotFoundException("博客不存在");
+		}
+		Blog b = new Blog();				//
+		BeanUtils.copyProperties(blog, b);	//这里两行是为了不要操作的时候直接动数据库，先本地动完再去数据库
+		
+		String content = b.getContent();
+		b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+		return b;
 	}
 
 	

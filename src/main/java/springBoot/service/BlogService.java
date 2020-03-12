@@ -26,7 +26,7 @@ public interface BlogService {
 	
 	Page<Blog> listBlog(String query,Pageable pageable);	//index页面的全局搜索
 	
-	
+	Blog getAndConvert(Long id);	//封装一个将文本从markdown转换成html的方法
 	
 	
 }
