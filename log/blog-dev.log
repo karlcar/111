@@ -2213,3 +2213,10 @@ org.springframework.expression.spel.SpelParseException: Expression [#dates.forma
 2020-03-12 16:39:21.182  INFO 19188 --- [http-nio-8080-exec-5] springBoot.aspect.LogAspect              : Request : RequestLog [url=http://localhost:8080/blog/99, ip=0:0:0:0:0:0:0:1, classMethod=springBoot.controller.indexController.blog, args=[99, {}]]
 2020-03-12 16:39:21.187  INFO 19188 --- [http-nio-8080-exec-5] springBoot.aspect.LogAspect              : ---------doAfter-------------
 2020-03-12 16:39:21.187  INFO 19188 --- [http-nio-8080-exec-5] springBoot.aspect.LogAspect              : Result : blog
+2020-03-12 17:44:35.275  INFO 19188 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-12 17:44:35.279  INFO 19188 --- [RMI TCP Connection(3)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@43df9ff9: startup date [Thu Mar 12 16:37:08 CST 2020]; root of context hierarchy
+2020-03-12 17:44:35.294  INFO 19188 --- [RMI TCP Connection(3)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-03-12 17:44:35.296  INFO 19188 --- [RMI TCP Connection(3)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-03-12 17:44:35.302  INFO 19188 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-12 17:44:35.304  INFO 19188 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-12 17:44:35.322  INFO 19188 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
