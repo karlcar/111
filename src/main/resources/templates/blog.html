@@ -482,7 +482,10 @@ h5,h6{font-size:1em;}
                   <img src="https://unsplash.it/100/100?image=1005" th:src="@{${comment.avatar}}">
                 </a>
                 <div class="content">
-                  <a class="author" th:text="${comment.nickname}">Matt</a>
+                  <a class="author" >
+                    <span th:text="${comment.nickname}">Matt</span>
+                    <!-- <div class="ui mini basic teal left pointing label m-padded-mini" th:if="${comment.adminComment}">博主</div> -->
+                  </a>
                   <div class="metadata">
                     <span class="date" th:text="${#dates.format(comment.createTime,'yyyy-MM-dd HH:mm')}">Today at 5:42PM</span>
                   </div>
@@ -491,6 +494,29 @@ h5,h6{font-size:1em;}
                   </div>
                   <div class="actions">
                     <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-commentid=${comment.id},data-commentnickname=${comment.nickname}" onclick="reply(this)">回复</a>
+                  </div>
+                </div>
+                <div class="comments" th:if="${#arrays.length(comment.replyComments)}>0">
+                  <div class="comment" th:each="reply : ${comment.replyComments}">
+                    <a class="avatar">
+                      <img src="https://unsplash.it/100/100?image=1005" th:src="@{${reply.avatar}}">
+                    </a>
+                    <div class="content">
+                      <a class="author" >
+                        <span th:text="${reply.nickname}">小红</span>
+                        <div class="ui mini basic teal left pointing label m-padded-mini">博主</div> 
+                        &nbsp;<span th:text="|@ ${reply.parentComment.nickname}|" class="m-teal">@ 小白</span>
+                      </a>
+                      <div class="metadata">
+                        <span class="date" th:text="${#dates.format(reply.createTime,'yyyy-MM-dd HH:mm')}">Today at 5:42PM</span>
+                      </div>
+                      <div class="text" th:text="${reply.content}">
+                        How artistic!
+                      </div>
+                      <div class="actions">
+                        <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-commentid=${reply.id},data-commentnickname=${reply.nickname}" onclick="reply(this)">回复</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -549,6 +575,7 @@ h5,h6{font-size:1em;}
                 </div>
               </div>
               <!--*/-->
+
             </div>
           </div>
         </div>
@@ -742,6 +769,12 @@ h5,h6{font-size:1em;}
         }
       }
     });
+
+    //由于第一次加载页面不会加载评论，需要提交评论才可以看到历史的（功能显示提交才可以看到历史的），所以一开始先加载页面
+    $(function(){
+      $("#comment-container").load(/*[[@{/comments/{id}(id=${blog.id})}]]*/"comments/6");
+    });
+
 
     //博客评论提交的方法
     $('#commentpost-btn').click(function(){
