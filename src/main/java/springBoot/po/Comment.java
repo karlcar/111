@@ -10,7 +10,7 @@ import java.util.List;
 @Table(name = "t_comment")
 public class Comment {
 
-    @Id
+    @Id 
     @GeneratedValue
     private Long id;
     

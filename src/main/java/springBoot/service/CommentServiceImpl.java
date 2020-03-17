@@ -25,7 +25,7 @@ public class CommentServiceImpl implements CommentService {
         List<Comment> comments = commentRepository.findByBlogIdAndParentCommentNull(blogId,sort);
         return eachComment(comments);
     }
-
+ 
     @Transactional
     @Override
     public Comment saveComment(Comment comment) {

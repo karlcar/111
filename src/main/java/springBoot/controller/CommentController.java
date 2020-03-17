@@ -17,7 +17,7 @@ public class CommentController {
 	
 	@Autowired
 	private CommentService commentService;
-	@Autowired
+	@Autowired 
 	private BlogService blogService;
 	@Value("${comment.avatar}")		//在application里面设置了
 	private String avatar;
