@@ -29,6 +29,9 @@ public class Comment {
 
     @ManyToOne
     private Comment parentComment;
+    
+    //是否是管理员的评论
+    private boolean adminComment;
 
     public Comment() {
     }
@@ -105,15 +108,20 @@ public class Comment {
         this.parentComment = parentComment;
     }
 
-    @Override
-    public String toString() {
-        return "Comment{" +
-                "id=" + id +
-                ", nickname='" + nickname + '\'' +
-                ", email='" + email + '\'' +
-                ", content='" + content + '\'' +
-                ", avatar='" + avatar + '\'' +
-                ", createTime=" + createTime +
-                '}';
-    }
+    public boolean isAdminComment() {
+		return adminComment;
+	}
+
+	public void setAdminComment(boolean adminComment) {
+		this.adminComment = adminComment;
+	}
+
+	@Override
+	public String toString() {
+		return "Comment [id=" + id + ", nickname=" + nickname + ", email=" + email + ", content=" + content
+				+ ", avatar=" + avatar + ", createTime=" + createTime + ", blog=" + blog + ", replyComments="
+				+ replyComments + ", parentComment=" + parentComment + ", adminComment=" + adminComment + "]";
+	}
+
+	
 }
