@@ -2,7 +2,9 @@ package springBoot.service;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -147,6 +149,24 @@ public class BlogServiceImpl implements BlogService {
 		}, pageable);
 	}
 
+	//这是归档页面的展示实现
+	@Override
+	public Map<String, List<Blog>> archiveBlog() {
+		List<String> years = blogRepository.findGroupYear();
+		Map<String, List<Blog>> map = new HashMap<>();
+		for(String year : years) {	//遍历一遍符合的blog进行展示
+			map.put(year, blogRepository.findByYearResultGroup(year));
+		}
+		return map;
+	}
+	
+	//归档页面的博客条数
+	@Override
+	public Long countBlog() {
+		return blogRepository.count();
+	}
+
+	
 	
 	
 	

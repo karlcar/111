@@ -1,6 +1,7 @@
 package springBoot.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -29,6 +30,10 @@ public interface BlogService {
 	Blog getAndConvert(Long id);	//封装一个将文本从markdown转换成html的方法
 	
 	Page<Blog> listBlog(Long id,Pageable pageable);	//tags展示页面的查询展示
+	
+	Map<String,List<Blog>> archiveBlog();		//这是归档页面的展示，String是年份，List是展示的内容结果集合
+	
+	Long countBlog();	//归档页面的博客条数
 	
 	
 }

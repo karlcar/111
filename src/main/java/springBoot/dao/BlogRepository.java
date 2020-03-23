@@ -23,5 +23,13 @@ public interface BlogRepository extends JpaRepository<Blog, Long>, JpaSpecificat
 	@Transactional
 	@Modifying
 	@Query("update Blog t set t.views = t.views + 1 where t.id= ?1")
-	int updateViews(Long id);
+	int updateViews(Long id);					//浏览次数
+	
+	//SELECT DATE_FORMAT(t.update_time,'%Y') as YEAR from t_blog t GROUP BY YEAR ORDER BY year DESC;
+	@Query("select function('DATE_FORMAT', t.updateTime, '%Y') as year from Blog t group by function('DATE_FORMAT', t.updateTime, '%Y') order by year DESC ")
+	List<String> findGroupYear();				//这是归档页面的展示,找寻年份
+	
+	//SELECT * from t_blog t where DATE_FORMAT(t.update_time,'%Y') = '2020';
+	@Query("select t from Blog t where function('DATE_FORMAT', t.updateTime, '%Y') = ?1")
+	List<Blog> findByYearResultGroup(String year);			//这是归档页面的展示,展示具体的博客
 }
