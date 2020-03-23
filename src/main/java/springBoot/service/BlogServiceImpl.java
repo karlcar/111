@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Join;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
@@ -133,7 +134,20 @@ public class BlogServiceImpl implements BlogService {
 		
 		return b;
 	}
+	
+	//tags展示页面的展示方法实现
+	@Override
+	public Page<Blog> listBlog(Long tagId, Pageable pageable) {
+		return blogRepository.findAll(new Specification<Blog>() {
+			@Override
+			public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+				Join join = root.join("tags");	//关联查询Blog对象类中的tags
+				return cb.equal(join.get("id"), tagId);
+			}
+		}, pageable);
+	}
 
+	
 	
 	
 	

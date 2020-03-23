@@ -28,5 +28,7 @@ public interface BlogService {
 	
 	Blog getAndConvert(Long id);	//封装一个将文本从markdown转换成html的方法
 	
+	Page<Blog> listBlog(Long id,Pageable pageable);	//tags展示页面的查询展示
+	
 	
 }
